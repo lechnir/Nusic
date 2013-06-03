@@ -10,13 +10,20 @@
 
 @interface ViewController ()
 
+
+
 @end
 
 @implementation ViewController
 
+@synthesize loginButton;
+
+@synthesize usernameText;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [usernameText becomeFirstResponder];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

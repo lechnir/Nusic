@@ -24,6 +24,7 @@
 		6BE3FA2B175A89DA000A4412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE3FA03175A89DA000A4412 /* Foundation.framework */; };
 		6BE3FA33175A89DA000A4412 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BE3FA31175A89DA000A4412 /* InfoPlist.strings */; };
 		6BE3FA36175A89DA000A4412 /* NusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3FA35175A89DA000A4412 /* NusicTests.m */; };
+		8F4844F9175C2B0F00A81416 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4844F8175C2B0F00A81416 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		6BE3FA32175A89DA000A4412 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6BE3FA34175A89DA000A4412 /* NusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NusicTests.h; sourceTree = "<group>"; };
 		6BE3FA35175A89DA000A4412 /* NusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NusicTests.m; sourceTree = "<group>"; };
+		8F4844F7175C2B0F00A81416 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		8F4844F8175C2B0F00A81416 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 		6BE3FA07175A89DA000A4412 /* Nusic */ = {
 			isa = PBXGroup;
 			children = (
+				8F4844F7175C2B0F00A81416 /* ProfileViewController.h */,
+				8F4844F8175C2B0F00A81416 /* ProfileViewController.m */,
 				6BE3FA10175A89DA000A4412 /* AppDelegate.h */,
 				6BE3FA11175A89DA000A4412 /* AppDelegate.m */,
 				6BE3FA19175A89DA000A4412 /* MainStoryboard_iPhone.storyboard */,
@@ -277,6 +282,7 @@
 				6BE3FA0E175A89DA000A4412 /* main.m in Sources */,
 				6BE3FA12175A89DA000A4412 /* AppDelegate.m in Sources */,
 				6BE3FA21175A89DA000A4412 /* ViewController.m in Sources */,
+				8F4844F9175C2B0F00A81416 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +473,7 @@
 				6BE3FA3B175A89DA000A4412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BE3FA3C175A89DA000A4412 /* Build configuration list for PBXNativeTarget "NusicTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +482,7 @@
 				6BE3FA3E175A89DA000A4412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

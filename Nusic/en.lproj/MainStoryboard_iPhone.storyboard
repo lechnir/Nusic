@@ -1,23 +1,164 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Yt-Jt-vc2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Profile View Controller-->
+        <scene sceneID="yeV-mU-Kc2">
+            <objects>
+                <viewController id="HM9-7H-FeQ" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="366-xL-YMd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-f1-GLj">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="swipe right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmx-vt-zp0">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mmx-vt-zp0" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="96" id="CN3-n3-yKP"/>
+                                    <constraint firstItem="mmx-vt-zp0" firstAttribute="centerX" secondItem="JlA-f1-GLj" secondAttribute="centerX" type="default" id="wCm-BR-xKG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JlA-f1-GLj" firstAttribute="top" secondItem="366-xL-YMd" secondAttribute="top" constant="-9" id="PLJ-Bk-cxT"/>
+                            <constraint firstItem="JlA-f1-GLj" firstAttribute="leading" secondItem="366-xL-YMd" secondAttribute="leading" type="default" id="YzU-lG-Smy"/>
+                            <constraint firstItem="JlA-f1-GLj" firstAttribute="bottom" secondItem="366-xL-YMd" secondAttribute="bottom" type="default" id="aQF-4T-4BR"/>
+                            <constraint firstItem="JlA-f1-GLj" firstAttribute="trailing" secondItem="366-xL-YMd" secondAttribute="trailing" type="default" id="kVa-Gz-hu2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uY8-iP-Ou5"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="JlA-f1-GLj" id="3KJ-8S-LFc"/>
+                        <outlet property="testLabel" destination="mmx-vt-zp0" id="cdU-Xa-zPi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PC-Pw-G2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="-40"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yxa-Za-LEx">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="7Yt-Jt-vc2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gIW-s7-GcH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="wii-10-KfN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqS-Df-7ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490" y="-40"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-15-ph8">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HnT-Pm-02x">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="ovM-Sp-9zD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubd-q0-HBT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Nge-ec-KAd"/>
+                                    <constraint firstAttribute="width" constant="73" id="hfX-Rh-nIc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HM9-7H-FeQ" kind="push" id="Uz7-oP-SR1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9D-xJ-1ve">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uR-z4-5l3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nusic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edR-bR-kL6">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="edR-bR-kL6" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="0dh-Rz-p55"/>
+                            <constraint firstItem="N9D-xJ-1ve" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0ia-rl-4bn"/>
+                            <constraint firstItem="ubd-q0-HBT" firstAttribute="centerX" secondItem="edR-bR-kL6" secondAttribute="centerX" type="default" id="6ri-q6-KVn"/>
+                            <constraint firstItem="D2d-15-ph8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="112" id="7ZO-kr-BW6"/>
+                            <constraint firstItem="edR-bR-kL6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Ge2-9J-qT8"/>
+                            <constraint firstItem="D2d-15-ph8" firstAttribute="leading" secondItem="HnT-Pm-02x" secondAttribute="leading" type="default" id="L8o-0I-qYm"/>
+                            <constraint firstItem="8uR-z4-5l3" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ott-lg-iGI"/>
+                            <constraint firstItem="HnT-Pm-02x" firstAttribute="top" secondItem="3" secondAttribute="top" constant="60" id="RyA-A9-BR2"/>
+                            <constraint firstItem="ubd-q0-HBT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="158" id="SbP-zi-wBz"/>
+                            <constraint firstItem="8uR-z4-5l3" firstAttribute="baseline" secondItem="HnT-Pm-02x" secondAttribute="baseline" type="default" id="dq2-TD-38H"/>
+                            <constraint firstItem="N9D-xJ-1ve" firstAttribute="baseline" secondItem="D2d-15-ph8" secondAttribute="baseline" type="default" id="nYS-Zg-DBf"/>
+                            <constraint firstItem="HnT-Pm-02x" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="117" id="wU8-G5-yFe"/>
+                            <constraint firstItem="HnT-Pm-02x" firstAttribute="trailing" secondItem="D2d-15-ph8" secondAttribute="trailing" type="default" id="zgU-Wm-gMC"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mWq-01-1k4"/>
+                    <connections>
+                        <outlet property="loginButton" destination="ubd-q0-HBT" id="oPN-kG-L68"/>
+                        <outlet property="usernameText" destination="HnT-Pm-02x" id="Aw2-wT-oES"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-94" y="-40"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="testLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="usernameText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
