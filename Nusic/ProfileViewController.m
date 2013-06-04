@@ -38,6 +38,14 @@
     
     [backgroundView addGestureRecognizer:swipeGesture]; //attaches swipe to view
     
+    
+    UITapGestureRecognizer *tapRecognizer; //tap recognizer on profile pic image
+    tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(profileTouched:)];
+    [profilePic addGestureRecognizer:tapRecognizer];
+    
+    profilePic.userInteractionEnabled = YES;
+    
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -53,6 +61,15 @@
     testLabel.text = @"screen swiped"; //changes text
     
     //    [self switchViews];
+}
+
+- (void) profileTouched:(UITapGestureRecognizer*)tapRecognizer {
+    NSLog(@"touched");
+    
+    CGRect frame = [profilePic frame];
+    frame.size.width = .9 * frame.size.width;
+    frame.size.height = .9 * frame.size.height;
+    [profilePic setFrame:frame]; //resizes profile pic if tapped
 }
 
 @end

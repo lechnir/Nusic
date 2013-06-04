@@ -127,7 +127,6 @@
 				8F4844F7175C2B0F00A81416 /* ProfileViewController.h */,
 				8F4844F8175C2B0F00A81416 /* ProfileViewController.m */,
 				6BE3FA10175A89DA000A4412 /* AppDelegate.h */,
-				8F0F054F175DC2B2003929F1 /* facebook-default.jpg */,
 				6BE3FA11175A89DA000A4412 /* AppDelegate.m */,
 				6BE3FA19175A89DA000A4412 /* MainStoryboard_iPhone.storyboard */,
 				6BE3FA1C175A89DA000A4412 /* MainStoryboard_iPad.storyboard */,
@@ -142,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				6BE3FA09175A89DA000A4412 /* Nusic-Info.plist */,
+				8F0F054F175DC2B2003929F1 /* facebook-default.jpg */,
 				6BE3FA0A175A89DA000A4412 /* InfoPlist.strings */,
 				6BE3FA0D175A89DA000A4412 /* main.m */,
 				6BE3FA0F175A89DA000A4412 /* Nusic-Prefix.pch */,
