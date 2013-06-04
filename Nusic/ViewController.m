@@ -23,7 +23,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [usernameText becomeFirstResponder];
+    [usernameText becomeFirstResponder]; //makes the app start with keyboard up
+    
+    
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

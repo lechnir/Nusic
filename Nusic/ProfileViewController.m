@@ -16,6 +16,7 @@
 
 @synthesize backgroundView;
 @synthesize testLabel;
+@synthesize profilePic;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,9 +34,9 @@
     
     UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedScreen:)] ;
     swipeGesture.numberOfTouchesRequired = 1;
-    swipeGesture.direction = (UISwipeGestureRecognizerDirectionRight);
+    swipeGesture.direction = (UISwipeGestureRecognizerDirectionRight); //swipe direction
     
-    [backgroundView addGestureRecognizer:swipeGesture];
+    [backgroundView addGestureRecognizer:swipeGesture]; //attaches swipe to view
     
 	// Do any additional setup after loading the view.
 }
@@ -48,8 +49,8 @@
 
 - (void) swipedScreen:(UISwipeGestureRecognizer*)swipeGesture {
     NSLog(@"%i", 1);
-    backgroundView.backgroundColor = [UIColor magentaColor];
-    testLabel.text = @"screen swiped";
+    backgroundView.backgroundColor = [UIColor magentaColor]; //changes background color
+    testLabel.text = @"screen swiped"; //changes text
     
     //    [self switchViews];
 }

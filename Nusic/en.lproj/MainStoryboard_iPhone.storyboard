@@ -53,6 +53,7 @@
                     <navigationItem key="navigationItem" id="uY8-iP-Ou5"/>
                     <connections>
                         <outlet property="backgroundView" destination="JlA-f1-GLj" id="3KJ-8S-LFc"/>
+                        <outlet property="profilePic" destination="ERL-gz-KwG" id="ucz-tc-Z0V"/>
                         <outlet property="testLabel" destination="mmx-vt-zp0" id="cdU-Xa-zPi"/>
                     </connections>
                 </viewController>
@@ -160,6 +161,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="backgroundView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="profilePic" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="testLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
