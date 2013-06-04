@@ -30,14 +30,21 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap the picture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKU-KW-3vQ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="VKU-KW-3vQ" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="83" id="67l-ff-mmq"/>
                                     <constraint firstItem="Ei9-dF-a5x" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="35" id="MiZ-87-bTd"/>
+                                    <constraint firstAttribute="trailing" secondItem="VKU-KW-3vQ" secondAttribute="trailing" constant="41" id="MnR-Tx-TiO"/>
                                     <constraint firstItem="ERL-gz-KwG" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="30" id="NP3-Cy-fhO"/>
                                     <constraint firstItem="mmx-vt-zp0" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="210" id="YW3-UD-WcB"/>
+                                    <constraint firstItem="VKU-KW-3vQ" firstAttribute="leading" secondItem="Ei9-dF-a5x" secondAttribute="leading" type="default" id="ngd-0i-cg7"/>
                                     <constraint firstItem="ERL-gz-KwG" firstAttribute="leading" secondItem="JlA-f1-GLj" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="o4a-Hx-6Yh"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ei9-dF-a5x" secondAttribute="trailing" constant="109" id="uFT-2z-ejU"/>
                                     <constraint firstItem="mmx-vt-zp0" firstAttribute="centerX" secondItem="JlA-f1-GLj" secondAttribute="centerX" type="default" id="wCm-BR-xKG"/>
                                 </constraints>
                             </view>
