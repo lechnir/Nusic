@@ -11,9 +11,9 @@
 @interface ProfileViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIView *backgroundView;
-
-@property (strong, nonatomic) IBOutlet UILabel *testLabel;
-
+@property (strong, nonatomic) IBOutlet UILabel *testSwipe;
 @property (strong, nonatomic) IBOutlet UIImageView *profilePic;
+@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) IBOutlet UILabel *name;
 
 @end

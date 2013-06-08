@@ -15,8 +15,10 @@
 @implementation ProfileViewController
 
 @synthesize backgroundView;
-@synthesize testLabel;
+@synthesize testSwipe;
 @synthesize profilePic;
+@synthesize username;
+@synthesize name;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,8 +46,10 @@
     [profilePic addGestureRecognizer:tapRecognizer];
     
     profilePic.userInteractionEnabled = YES;
-    
-    
+  
+//    self.navigationItem.hidesBackButton = YES;
+
+  name.text = username;
 	// Do any additional setup after loading the view.
 }
 
@@ -58,7 +62,7 @@
 - (void) swipedScreen:(UISwipeGestureRecognizer*)swipeGesture {
     NSLog(@"%i", 1);
     backgroundView.backgroundColor = [UIColor magentaColor]; //changes background color
-    testLabel.text = @"screen swiped"; //changes text
+    testSwipe.text = @"screen swiped"; //changes text
     
     //    [self switchViews];
 }
@@ -70,6 +74,9 @@
     frame.size.width = .9 * frame.size.width;
     frame.size.height = .9 * frame.size.height;
     [profilePic setFrame:frame]; //resizes profile pic if tapped
+  
+  
 }
+
 
 @end
