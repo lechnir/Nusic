@@ -26,6 +26,14 @@
 		6BE3FA36175A89DA000A4412 /* NusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3FA35175A89DA000A4412 /* NusicTests.m */; };
 		8F0F0550175DC2B2003929F1 /* facebook-default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F0F054F175DC2B2003929F1 /* facebook-default.jpg */; };
 		8F4844F9175C2B0F00A81416 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4844F8175C2B0F00A81416 /* ProfileViewController.m */; };
+		8F57865F1763B79D003315AD /* loginBackground.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8F57865E1763B79D003315AD /* loginBackground.PNG */; };
+		8F5786611763BB4B003315AD /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5786601763BB4B003315AD /* FacebookSDK.framework */; };
+		8F5786631763BBDF003315AD /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8F5786621763BBDF003315AD /* FacebookSDKResources.bundle */; };
+		8F5786691763BC69003315AD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5786641763BC69003315AD /* Accounts.framework */; };
+		8F57866A1763BC69003315AD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5786651763BC69003315AD /* AdSupport.framework */; };
+		8F57866B1763BC69003315AD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5786661763BC69003315AD /* libsqlite3.dylib */; };
+		8F57866C1763BC69003315AD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5786671763BC69003315AD /* Security.framework */; };
+		8F57866D1763BC69003315AD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5786681763BC69003315AD /* Social.framework */; };
 		8F70B58317613C7E0066B2FA /* button_connectfacebook.press.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F70B58117613C7E0066B2FA /* button_connectfacebook.press.png */; };
 		8F70B58417613C7E0066B2FA /* button_connectfacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F70B58217613C7E0066B2FA /* button_connectfacebook.png */; };
 /* End PBXBuildFile section */
@@ -67,6 +75,14 @@
 		8F0F054F175DC2B2003929F1 /* facebook-default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "facebook-default.jpg"; sourceTree = "<group>"; };
 		8F4844F7175C2B0F00A81416 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		8F4844F8175C2B0F00A81416 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		8F57865E1763B79D003315AD /* loginBackground.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginBackground.PNG; path = ../../../../Downloads/loginBackground.PNG; sourceTree = "<group>"; };
+		8F5786601763BB4B003315AD /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		8F5786621763BBDF003315AD /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		8F5786641763BC69003315AD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8F5786651763BC69003315AD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		8F5786661763BC69003315AD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8F5786671763BC69003315AD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8F5786681763BC69003315AD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8F70B58117613C7E0066B2FA /* button_connectfacebook.press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_connectfacebook.press.png; path = ../../Humin/client/ios/Humin/Humin/Resources/FUE/button_connectfacebook.press.png; sourceTree = "<group>"; };
 		8F70B58217613C7E0066B2FA /* button_connectfacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_connectfacebook.png; path = ../../Humin/client/ios/Humin/Humin/Resources/FUE/button_connectfacebook.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,9 +92,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5786691763BC69003315AD /* Accounts.framework in Frameworks */,
+				8F57866A1763BC69003315AD /* AdSupport.framework in Frameworks */,
+				8F57866B1763BC69003315AD /* libsqlite3.dylib in Frameworks */,
+				8F57866C1763BC69003315AD /* Security.framework in Frameworks */,
+				8F57866D1763BC69003315AD /* Social.framework in Frameworks */,
 				6BE3FA02175A89DA000A4412 /* UIKit.framework in Frameworks */,
 				6BE3FA04175A89DA000A4412 /* Foundation.framework in Frameworks */,
 				6BE3FA06175A89DA000A4412 /* CoreGraphics.framework in Frameworks */,
+				8F5786611763BB4B003315AD /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +120,11 @@
 		6BE3F9F5175A89DA000A4412 = {
 			isa = PBXGroup;
 			children = (
+				8F5786641763BC69003315AD /* Accounts.framework */,
+				8F5786651763BC69003315AD /* AdSupport.framework */,
+				8F5786661763BC69003315AD /* libsqlite3.dylib */,
+				8F5786671763BC69003315AD /* Security.framework */,
+				8F5786681763BC69003315AD /* Social.framework */,
 				6BE3FA07175A89DA000A4412 /* Nusic */,
 				6BE3FA2E175A89DA000A4412 /* NusicTests */,
 				6BE3FA00175A89DA000A4412 /* Frameworks */,
@@ -117,6 +144,8 @@
 		6BE3FA00175A89DA000A4412 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F5786621763BBDF003315AD /* FacebookSDKResources.bundle */,
+				8F5786601763BB4B003315AD /* FacebookSDK.framework */,
 				6BE3FA01175A89DA000A4412 /* UIKit.framework */,
 				6BE3FA03175A89DA000A4412 /* Foundation.framework */,
 				6BE3FA05175A89DA000A4412 /* CoreGraphics.framework */,
@@ -145,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				8F70B58117613C7E0066B2FA /* button_connectfacebook.press.png */,
+				8F57865E1763B79D003315AD /* loginBackground.PNG */,
 				8F70B58217613C7E0066B2FA /* button_connectfacebook.png */,
 				6BE3FA09175A89DA000A4412 /* Nusic-Info.plist */,
 				8F0F054F175DC2B2003929F1 /* facebook-default.jpg */,
@@ -257,6 +287,8 @@
 				8F0F0550175DC2B2003929F1 /* facebook-default.jpg in Resources */,
 				8F70B58317613C7E0066B2FA /* button_connectfacebook.press.png in Resources */,
 				8F70B58417613C7E0066B2FA /* button_connectfacebook.png in Resources */,
+				8F57865F1763B79D003315AD /* loginBackground.PNG in Resources */,
+				8F5786631763BBDF003315AD /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +445,10 @@
 		6BE3FA3A175A89DA000A4412 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nusic/Nusic-Prefix.pch";
 				INFOPLIST_FILE = "Nusic/Nusic-Info.plist";
@@ -424,6 +460,10 @@
 		6BE3FA3B175A89DA000A4412 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nusic/Nusic-Prefix.pch";
 				INFOPLIST_FILE = "Nusic/Nusic-Info.plist";

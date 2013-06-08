@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ProfileViewController ()
 
@@ -39,6 +40,12 @@
     swipeGesture.direction = (UISwipeGestureRecognizerDirectionRight); //swipe direction
     
     [backgroundView addGestureRecognizer:swipeGesture]; //attaches swipe to view
+
+  // Get the Layer of any view
+  CALayer * l = [profilePic layer];
+  [l setMasksToBounds:YES];
+  [l setCornerRadius:75.0];
+  
     
     
     UITapGestureRecognizer *tapRecognizer; //tap recognizer on profile pic image
@@ -48,8 +55,8 @@
     profilePic.userInteractionEnabled = YES;
   
 //    self.navigationItem.hidesBackButton = YES;
-
-  name.text = username;
+  if(![username isEqualToString:@""])
+      name.text = username;
 	// Do any additional setup after loading the view.
 }
 
