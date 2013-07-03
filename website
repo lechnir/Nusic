@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<META HTTP-EQUIV = "Pragma" CONTENT="no-cache">
+<body>
+<FORM METHOD=POST ACTION="j_security_check">
+<p>
+<BR>
+<fieldset>
+<strong> Username </strong> <input type="text" size="20" name="j_username">
+<strong> Password </strong>  <input type="password" size="20" name="j_password">
+<input type="submit" name="login" value="Login">
+</fieldset>
+<html>
