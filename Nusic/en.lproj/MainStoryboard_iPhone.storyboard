@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -53,14 +53,14 @@
                                 <constraints>
                                     <constraint firstItem="VKU-KW-3vQ" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="280" scoringType="5" id="96H-dA-djZ"/>
                                     <constraint firstItem="ERL-gz-KwG" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="43" id="9nR-Ru-eXQ"/>
-                                    <constraint firstItem="mmx-vt-zp0" firstAttribute="leading" secondItem="JlA-f1-GLj" secondAttribute="leading" constant="109" id="AMA-hE-uxr"/>
-                                    <constraint firstItem="S3t-Bm-E1o" firstAttribute="centerX" secondItem="VKU-KW-3vQ" secondAttribute="centerX" type="default" id="AbI-0S-Xjn"/>
                                     <constraint firstItem="Ei9-dF-a5x" firstAttribute="centerX" secondItem="VKU-KW-3vQ" secondAttribute="centerX" type="default" id="Cuy-7v-kjC"/>
-                                    <constraint firstAttribute="bottom" secondItem="S3t-Bm-E1o" secondAttribute="bottom" constant="114" id="FAh-JX-vVh"/>
                                     <constraint firstItem="S3t-Bm-E1o" firstAttribute="centerX" secondItem="JlA-f1-GLj" secondAttribute="centerX" type="default" id="QIJ-js-RgS"/>
                                     <constraint firstAttribute="bottom" secondItem="VKU-KW-3vQ" secondAttribute="bottom" constant="256" id="TE0-O4-Hii"/>
                                     <constraint firstItem="Ei9-dF-a5x" firstAttribute="top" secondItem="JlA-f1-GLj" secondAttribute="top" constant="223" id="ZXM-Wq-oCe"/>
+                                    <constraint firstItem="mmx-vt-zp0" firstAttribute="centerX" secondItem="S3t-Bm-E1o" secondAttribute="centerX" type="default" id="dae-qp-Zvt"/>
+                                    <constraint firstItem="mmx-vt-zp0" firstAttribute="centerX" secondItem="VKU-KW-3vQ" secondAttribute="centerX" type="default" id="dxN-yz-T5a"/>
                                     <constraint firstItem="Ei9-dF-a5x" firstAttribute="centerX" secondItem="ERL-gz-KwG" secondAttribute="centerX" type="default" id="lkJ-AN-S8p"/>
+                                    <constraint firstAttribute="bottom" secondItem="S3t-Bm-E1o" secondAttribute="bottom" constant="115" id="pRr-Ai-vgu"/>
                                     <constraint firstAttribute="bottom" secondItem="mmx-vt-zp0" secondAttribute="bottom" constant="187" id="wa1-4G-nBO"/>
                                 </constraints>
                             </view>
@@ -188,6 +188,9 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="buttonClicked:"/>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="action" name="buttonUnpressed:"/>
                 <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="usernameText" candidateClass="UITextField"/>
             </relationships>

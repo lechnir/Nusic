@@ -76,11 +76,19 @@
 
 - (void) profileTouched:(UITapGestureRecognizer*)tapRecognizer {
     NSLog(@"touched");
-    
+  CALayer * l = [profilePic layer];
+  [l setMasksToBounds:YES];
     CGRect frame = [profilePic frame];
-    frame.size.width = .9 * frame.size.width;
-    frame.size.height = .9 * frame.size.height;
-    [profilePic setFrame:frame]; //resizes profile pic if tapped
+  frame.size.width = .9 * frame.size.width;
+  frame.size.height = .9 * frame.size.height;
+  
+  [UIView animateWithDuration:1.0 animations:^{
+    
+      [profilePic setFrame:frame];
+       [l setCornerRadius:l.cornerRadius * .9];
+     }];
+   //resizes profile pic if tapped
+  
   
   
 }
